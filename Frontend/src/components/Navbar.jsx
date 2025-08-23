@@ -5,28 +5,35 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return ( 
-    <header className="font-[Gabarito]">
-      <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center bg-white rounded-[30px] mt-[20px] shadow-lg ">
+    <header className="font-[Gabarito] w-full fixed z-50 mt-[30px]">
+      <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center bg-white rounded-[30px] shadow-2xl ">
         
         {/* Logo */}
-        <div className="flex items-center justify-between space-x-2">
-          <img src="/icon.svg" alt="logo" className="w-6 h-6 " />
+        <div className="flex items-center justify-between space-x-1">
+        <i className="ri-dice-line text-2xl font-[100] "></i>
         
-          <span className="text-[14px]">Aplict </span>
+          <span className="text-[20px] font-semibolt">Helix </span>
         </div>
+       
+
+         <div className="flex gap-x-[100px]">
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-8 text-sm">
           <a href="#" className="hover:text-gray-700">Products</a>
           <a href="#" className="hover:text-gray-700">Pricing</a>
           <a href="#" className="hover:text-gray-700">Docs</a>
           <a href="#" className="hover:text-gray-700">Customers</a>
           <a href="#" className="hover:text-gray-700">Resources</a>
 
-          <a href="#" className="hover:text-gray-700">Login</a>
-          <button className="px-4 py-1 border rounded-full bg-black text-white">Sign-up</button>
-      
+        
         </nav>
+        <div className="hidden md:flex items-center gap-6  ">
+          <a href="#" className="hover:text-gray-700">Login</a>
+          <button className="px-4 py-1 border rounded-full bg-black text-white shadow-lg ">Sign-up</button>
+        </div>
+      
+        </div>
 
         {/* Mobile Menu Button */}
         <button

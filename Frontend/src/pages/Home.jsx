@@ -1,79 +1,83 @@
 import React from "react";
 
 const HeroSection = () => {
-  const features = [
-    {
-      title: "CPQ",
-      desc: "The fastest way to go from quote to signed contract",
-    },
-    {
-     
-      title: "Billing",
-      desc: "Flexible plans and subscriptions built for scale",
-    },
-    {
-    
-      title: "Usage-based",
-      desc: "From usage to revenue, fully automated in real-time",
-    },
-    {
-    
-      title: "Usage-based",
-      desc: "From usage to revenue, fully automated in real-time",
-    },
-  ];
+const features = [
+  {
+    title: "Portfolio",
+    desc: "Design, customize, and deploy your portfolio with one click",
+    img: "https://cdn-icons-png.flaticon.com/128/10453/10453141.png",
+  },
+  {
+    title: "Resume",
+    desc: "Smart resumes, powered by LaTeX and AI.",
+    img: "https://cdn-icons-png.flaticon.com/128/9386/9386860.png",
+  },
+   {
+    title: "Road map ",
+    desc: "Create personalized learning roadmaps to master skills faster.",
+    img: "https://cdn-icons-png.flaticon.com/128/17145/17145905.png",
+  },
+  {
+    title: "Apply job",
+    desc: "From usage to revenue, fully automated in real-time",
+    img: "https://cdn-icons-png.flaticon.com/128/10490/10490250.png",
+  },
+ 
+];
 
   return (
-<section className="relative flex flex-col md:flex-row items-center max-w-6xl mx-auto py-16 font-[Gabarito] gap-8">
-  {/* Background Image */}
+<section className="relative flex flex-col md:flex-row items-center max-w-6xl  px-5 mx-auto py-16 font-[Gabarito] gap-8 h-screen ">
 
-
-  {/* Left Content */}
   <div className="flex-1 relative z-10">
-    {/* Heading */}
+  
     <div className="mb-12">
-      <p className="text-sm text-gray-500 mb-8 mt-[40px]">Your engine for smarter billing and growth</p>
-      <h1 className="text-4xl md:text-6xl text-gray-900 mb-6">
-        <span className="text-[#666666]">The new standard for</span> <br />
-        revenue management
+      <p className="text-sm text-[#666666] mb-8 mt-[40px]"> <i class="ri-instance-fill"></i> Easiest way to build your portfolio, resume, and apply to jobs</p>
+      <h1 className="text-4xl md:text-6xl text-gray-900 mb-6 -tracking-[2px]">
+        <span className="text-[#666666] ">The simple way to</span> <br />
+        portfolio resume apply
       </h1>
-      {/* Buttons */}
+      
       <div className="flex gap-4 mt-[20px]">
         <button className="bg-black text-white px-6 py-2 rounded-lg shadow hover:opacity-90 transition">
-          Try for free
+          Dashboard
         </button>
         <button className="bg-white border border-gray-300 text-black px-6 rounded-lg shadow hover:bg-gray-100 transition">
-          Book a demo
+          Create website
         </button>
       </div>
     </div>
 
-    {/* Features */}
-    <div className="flex flex-col md:flex-row justify-start gap-6 mt-[100px]">
-      {features.map((feature, idx) => (
-        <div
-          key={idx}
-          className="flex flex-col items-start text-start p-6 border rounded-lg hover:shadow-lg transition"
-        >
-          <div className="text-4xl mb-4">{feature.icon}</div>
-          <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-          <p className="text-gray-500">{feature.desc}</p>
-        </div>
-      ))}
+
+ <div className="flex flex-col md:flex-row gap-[40px] mt-[100px]">
+  {features.map((feature, idx) => (
+    <div
+      key={idx}
+      className="flex flex-col items-start text-start rounded-lg w-[230px] py-2"
+    >
+     
+      <h3 className="text-[18px] mb-2 flex items-center">
+         <img
+        src={feature.img}
+        alt={feature.title}
+        className="w-5 h-5 mr-2 "
+      />
+        {feature.title} <i className="ri-arrow-right-line ml-[75px]"></i>
+      </h3>
+      <p className="text-gray-500">{feature.desc}</p>
     </div>
+  ))}
+</div>
+
   </div>
+<div className="absolute inset-0 -z-10">
+  <img
+    className="h- object-cover translate-x-[390px]"
+    src="https://cdn.prod.website-files.com/6812d02840d393aa2c663370/6847f9fe57cfb544f7d5818a_hero-home.svg"
+    alt="Hero Background"
+  />
+</div>
 
-
-
-    <div className="absolute inset-0 -z-10 ml-[700px] mb-[200px]">
-    <img
-      className="w-[400px] h-full object-cover"
-      src="https://cdn.prod.website-files.com/6812d02840d393aa2c663370/6847f9fe57cfb544f7d5818a_hero-home.svg"
-      alt="Hero Background"
-    />
-  </div>
 </section>
-
   );
 };
 
