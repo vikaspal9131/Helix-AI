@@ -19,7 +19,7 @@ const features = [
   },
   {
     title: "Apply job",
-    desc: "From usage to revenue, fully automated in real-time",
+    desc: "Find the right job and apply instantly with just one click",
     img: "https://cdn-icons-png.flaticon.com/128/10490/10490250.png",
   },
  

@@ -103,13 +103,26 @@ const QuoteToCash = () => {
 
 
 
-<div class="bg-[#080808] text-[#FAFAFA] py-16 px-4 flex flex-col items-center font-[Gabarito] ">
- 
-  <div class="text-center ">
-    <h1 class="text-3xl md:text-5xl -tracking-[2px] mb-1">Designed for scale, loved for flexibility</h1>
-    <p class="text-gray-400 mb-6">The revenue platform modern finance teams were waiting for</p>
-    <button class="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">Get started for free</button>
 
+
+
+<div class="relative bg-white py-20 text-center h-screen font-[Gabarito] flex items-center">
+  <div class="max-w-4xl mx-auto px-6">
+   
+
+    <h1 class="text-3xl md:text-5xl -tracking-[2px] mb-1">Designed for scale, loved for flexibility</h1>
+    <p class="text-lg text-gray-700 mb-12">
+      We’ve got high-capacity backup server builds using 12x 14TB enterprise-grade HDDs, 
+      plus dual SSDs for OS. Ask our sales team for backup-specific options, and they will be happy to support.
+    </p>
+
+   
+
+   
+    <a href="#contact" 
+       class="inline-block bg-black text-white font-medium px-6 py-3 rounded-xl shadow hover:bg-gray-100  hover:text-black transition">
+       Go to dashboard
+    </a>
   </div>
 </div>
 
