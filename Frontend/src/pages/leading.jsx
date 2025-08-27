@@ -110,15 +110,13 @@ const QuoteToCash = () => {
   <div class="max-w-4xl mx-auto px-6">
    
 
-    <h1 class="text-3xl md:text-5xl -tracking-[2px] mb-1">Designed for scale, loved for flexibility</h1>
+    <h1 class="text-3xl md:text-5xl -tracking-[2px] mb-1">Designed for scale loved for flexibility</h1>
     <p class="text-lg text-gray-700 mb-12">
       We’ve got high-capacity backup server builds using 12x 14TB enterprise-grade HDDs, 
       plus dual SSDs for OS. Ask our sales team for backup-specific options, and they will be happy to support.
     </p>
 
-   
-
-   
+  
     <a href="#contact" 
        class="inline-block bg-black text-white font-medium px-6 py-3 rounded-xl shadow hover:bg-gray-100  hover:text-black transition">
        Go to dashboard
